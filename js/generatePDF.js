@@ -73,11 +73,20 @@ function generateQCABPDF(questions) {
                 // Marks / Word limit / Year (right margin top)
                 currentY = topMargin + 5;
                 doc.text(`${q.marks} M / ${q.year}`, rightMargin + 2, currentY);
-            } else {
+            } else if (p!=pagesNeeded-1){
                 // Right Margin Text (only for continuation pages)
                 const localWidth = 23;
                 const splitText = doc.splitTextToSize(
                     "Candidates must not write on this margin",
+                    localWidth
+                );
+                let currentY = topMargin + 5;
+                doc.text(splitText, rightMargin + 2, currentY);
+            }else {
+                // Right Margin Text (for marks page)
+                const localWidth = 23;
+                const splitText = doc.splitTextToSize(
+                    "Mr Bean",
                     localWidth
                 );
                 let currentY = topMargin + 5;
