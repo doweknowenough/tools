@@ -60,7 +60,7 @@ function generateQCABPDF(questions) {
             // page++;
             doc.setFontSize(8);
             doc.text(footerText, leftMargin - 10, bottomMargin + 3);
-            doc.text(String(page++), rightMargin + 10, bottomMargin + 3);
+            doc.text(String(page+q), rightMargin + 10, bottomMargin + 3);
 
             if (p === 0) {
                 // Left Question Number
@@ -97,6 +97,7 @@ function generateQCABPDF(questions) {
                 doc.text(splitText, rightMargin + 2, currentY);
             }
         }
+        page+=pagesNeeded;
     });
 
     window.generatedPDF = doc;
