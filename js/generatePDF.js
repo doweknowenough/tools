@@ -47,10 +47,7 @@ function generateQCABPDF(questions) {
         const pagesNeeded = Math.ceil(q.marks / 6);
 
         for (let p = 0; p < pagesNeeded; p++) {
-            if(q.question_id==1 && p==0){
-            }else{
-                doc.addPage();
-            }
+            if(q.question_id==1 && p==0){}else{doc.addPage();}
 
             // Margins
             doc.setLineWidth(0.3);
