@@ -31,7 +31,7 @@ function generateQCABPDF(questions) {
     const doc = new jsPDF({ unit: 'mm', format: 'a4' });
     const pageHeight = 297, pageWidth = 210;
     const leftMargin = 25, rightMargin = 185, topMargin = 15, bottomMargin = 282;
-    const page = 1;
+    let page = 1;
 
     doc.setFont("Times", "Roman");
     doc.setFontSize(12);
