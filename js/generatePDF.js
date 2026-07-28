@@ -56,7 +56,7 @@ function generateQCABPDF(questions) {
 
             // Footer
             const footerText = `XXXX-${q.question_id}`;
-            const footerText2 = `XXXX-${page}`;
+            const footerText2 = String(page);
             page++;
             doc.setFontSize(8);
             doc.text(footerText, leftMargin - 10, bottomMargin + 3);
