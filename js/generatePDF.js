@@ -36,11 +36,6 @@ function generateQCABPDF(questions) {
     doc.setFont("Times", "Roman");
     doc.setFontSize(12);
 
-    // ---------- PART 1: Render Question Listing ----------
-    // let currentY = topMargin;
-    // const localWidth = rightMargin - leftMargin +4; 
-    // const lineHeight = 6; // or set according to your font size and line spacing
-
     // ---------- PART 2: Render QCAB Pages ----------
 
     questions.forEach((q) => {
@@ -87,8 +82,8 @@ function generateQCABPDF(questions) {
             }else {
                 // Right Margin Text (for marks page)
                 const localWidth = 23;
-                const startMargin = topMargin+50;
-                const marginSize = 25;
+                const startMargin = topMargin+60;
+                const marginSize = 30;
                 doc.text(doc.splitTextToSize("Demand addressed-",localWidth), rightMargin + 2, startMargin);
                 doc.text(doc.splitTextToSize("Left any dimension-",localWidth), rightMargin + 2, startMargin+marginSize);
                 doc.text(doc.splitTextToSize("Readability-",localWidth), rightMargin + 2, startMargin+2*marginSize);
