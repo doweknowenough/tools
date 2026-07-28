@@ -39,11 +39,11 @@ function generateQCABPDF(questions) {
     // ---------- PART 2: Render QCAB Pages ----------
 
     questions.forEach((q) => {
-        // let pagesNeeded = 5;
-        // if(q.marks<20){
-        //     pagesNeeded = q.marks/5;
-        // }
-        const pagesNeeded = Math.ceil(q.marks / 6);
+        let pagesNeeded = 5;
+        if(q.marks<20){
+            pagesNeeded = Math.ceil(q.marks / 6);
+        }
+        // const pagesNeeded = Math.ceil(q.marks / 6);
 
         for (let p = 0; p < pagesNeeded; p++) {
             if(q.question_number==1 && p==0){}else{doc.addPage();}
