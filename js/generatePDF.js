@@ -89,12 +89,15 @@ function generateQCABPDF(questions) {
             }else {
                 // Right Margin Text (for marks page)
                 const localWidth = 23;
-                const splitText = doc.splitTextToSize(
-                    "Demand addressed-\n\n\n\nLeft any dimension-\n\n\n\nReadability-\n\n\n\nIntroduction-\n\n\n\nConclusion-\n\n\n\n",
-                    localWidth
-                );
-                let currentY = topMargin + 5;
-                doc.text(splitText, rightMargin + 2, currentY);
+                // const splitText = doc.splitTextToSize(
+                    // "Demand addressed-\n\n\n\nLeft any dimension-\n\n\n\nReadability-\n\n\n\nIntroduction-\n\n\n\nConclusion-\n\n\n\n",
+                    // localWidth
+                // );
+                // let currentY = topMargin + 5;
+                // doc.text(splitText, rightMargin + 2, currentY);
+
+                doc.text(doc.splitTextToSize("Demand addressed-",localWidth), rightMargin + 2, topMargin+5);
+                doc.text(doc.splitTextToSize("Introduction-",localWidth), rightMargin + 2, topMargin+15);
             }
         }
         page+=pagesNeeded;
