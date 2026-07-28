@@ -18,7 +18,7 @@ document.getElementById("generateQCAB").addEventListener("click", () => {
     // Ensure sequential numbering (1,2,3...)
     selectedQuestions.forEach((q, i) => {
         q.question_number = i + 1;
-        console.log("Questions No:", q.question_number);
+        // console.log("Questions No:", q.question_number);
     });
 
     //console.log("Selected Questions:", selectedQuestions);
@@ -36,9 +36,9 @@ function generateQCABPDF(questions) {
     doc.setFontSize(12);
 
     // ---------- PART 1: Render Question Listing ----------
-    let currentY = topMargin;
-    const localWidth = rightMargin - leftMargin +4; 
-    const lineHeight = 6; // or set according to your font size and line spacing
+    // let currentY = topMargin;
+    // const localWidth = rightMargin - leftMargin +4; 
+    // const lineHeight = 6; // or set according to your font size and line spacing
 
     // ---------- PART 2: Render QCAB Pages ----------
 
