@@ -1,0 +1,365 @@
+{
+    "official_syllabus_topics": [
+      {
+        "id": "GS1_T1",
+        "gs_paper": "GS1",
+        "subject_name": "Art & Culture",
+        "description": "Art & Culture : Art Forms, Literature, Architecture"
+      },
+      {
+        "id": "GS1_T2",
+        "gs_paper": "GS1",
+        "subject_name": "Modern History",
+        "description": "Modern History : Modern Indian History"
+      },
+      {
+        "id": "GS1_T3",
+        "gs_paper": "GS1",
+        "subject_name": "Freedom Struggle",
+        "description": "Freedom Struggle : Stages and Contributors of Freedom Struggle"
+      },
+      {
+        "id": "GS1_T4",
+        "gs_paper": "GS1",
+        "subject_name": "Post-Independence",
+        "description": "Post-Independence : Consolidation and Reorganization"
+      },
+      {
+        "id": "GS1_T5",
+        "gs_paper": "GS1",
+        "subject_name": "World History",
+        "description": "World History : Global Events & Political Philosophies"
+      },
+      {
+        "id": "GS1_T6",
+        "gs_paper": "GS1",
+        "subject_name": "Indian Society",
+        "description": "Indian Society : Societal Features and Diversity"
+      },
+      {
+        "id": "GS1_T7",
+        "gs_paper": "GS1",
+        "subject_name": "Indian Society",
+        "description": "Indian Society : Women, Population, Urbanization, Poverty"
+      },
+      {
+        "id": "GS1_T8",
+        "gs_paper": "GS1",
+        "subject_name": "Indian Society",
+        "description": "Indian Society : Globalization Effects"
+      },
+      {
+        "id": "GS1_T9",
+        "gs_paper": "GS1",
+        "subject_name": "Indian Society",
+        "description": "Indian Society : Social Empowerment & Secularism"
+      },
+      {
+        "id": "GS1_T10",
+        "gs_paper": "GS1",
+        "subject_name": "Physical Geography",
+        "description": "Physical Geography : World Physical Geography"
+      },
+      {
+        "id": "GS1_T11",
+        "gs_paper": "GS1",
+        "subject_name": "Human & Economic Geography",
+        "description": "Human & Economic Geography : Resource Distribution & Industry Location"
+      },
+      {
+        "id": "GS1_T12",
+        "gs_paper": "GS1",
+        "subject_name": "Geophysical Phenomena",
+        "description": "Geophysical Phenomena : Geophysical Events & Environmental Changes"
+      },
+      {
+        "id": "GS2_T1",
+        "gs_paper": "GS2",
+        "subject_name": "Polity",
+        "description": "Polity : Indian Constitution"
+      },
+      {
+        "id": "GS2_T2",
+        "gs_paper": "GS2",
+        "subject_name": "Polity",
+        "description": "Polity : Union-State Relations & Federalism"
+      },
+      {
+        "id": "GS2_T3",
+        "gs_paper": "GS2",
+        "subject_name": "Polity",
+        "description": "Polity : Separation of Powers"
+      },
+      {
+        "id": "GS2_T4",
+        "gs_paper": "GS2",
+        "subject_name": "Polity",
+        "description": "Polity : Comparative Constitutional Analysis"
+      },
+      {
+        "id": "GS2_T5",
+        "gs_paper": "GS2",
+        "subject_name": "Polity",
+        "description": "Polity : Parliament & State Legislatures"
+      },
+      {
+        "id": "GS2_T6",
+        "gs_paper": "GS2",
+        "subject_name": "Polity",
+        "description": "Polity : Executive, Judiciary & Associations"
+      },
+      {
+        "id": "GS2_T7",
+        "gs_paper": "GS2",
+        "subject_name": "Polity",
+        "description": "Polity : Representation of People’s Act"
+      },
+      {
+        "id": "GS2_T8",
+        "gs_paper": "GS2",
+        "subject_name": "Polity",
+        "description": "Polity : Constitutional Posts & Bodies"
+      },
+      {
+        "id": "GS2_T9",
+        "gs_paper": "GS2",
+        "subject_name": "Polity",
+        "description": "Polity : Statutory & Regulatory Bodies"
+      },
+      {
+        "id": "GS2_T10",
+        "gs_paper": "GS2",
+        "subject_name": "Governance",
+        "description": "Governance : Government Policies & Implementation"
+      },
+      {
+        "id": "GS2_T11",
+        "gs_paper": "GS2",
+        "subject_name": "Governance",
+        "description": "Governance : Development Industry & Stakeholders"
+      },
+      {
+        "id": "GS2_T12",
+        "gs_paper": "GS2",
+        "subject_name": "Social Justice",
+        "description": "Social Justice : Welfare Schemes for Vulnerable Sections"
+      },
+      {
+        "id": "GS2_T13",
+        "gs_paper": "GS2",
+        "subject_name": "Social Justice",
+        "description": "Social Justice : Social Sector Development Issues"
+      },
+      {
+        "id": "GS2_T14",
+        "gs_paper": "GS2",
+        "subject_name": "Social Justice",
+        "description": "Social Justice : Poverty & Hunger"
+      },
+      {
+        "id": "GS2_T15",
+        "gs_paper": "GS2",
+        "subject_name": "Governance",
+        "description": "Governance : Transparency & Accountability"
+      },
+      {
+        "id": "GS2_T16",
+        "gs_paper": "GS2",
+        "subject_name": "Governance",
+        "description": "Governance : Role of Civil Services"
+      },
+      {
+        "id": "GS2_T17",
+        "gs_paper": "GS2",
+        "subject_name": "International Relations",
+        "description": "International Relations : India & Neighbourhood Relations"
+      },
+      {
+        "id": "GS2_T18",
+        "gs_paper": "GS2",
+        "subject_name": "International Relations",
+        "description": "International Relations : Bilateral, Regional & Global Agreements"
+      },
+      {
+        "id": "GS2_T19",
+        "gs_paper": "GS2",
+        "subject_name": "International Relations",
+        "description": "International Relations : Global Policies & Indian Interests"
+      },
+      {
+        "id": "GS2_T20",
+        "gs_paper": "GS2",
+        "subject_name": "International Relations",
+        "description": "International Relations : International Institutions & Agencies"
+      },
+      {
+        "id": "GS3_T1",
+        "gs_paper": "GS3",
+        "subject_name": "Economy",
+        "description": "Economy : Indian Economy & Development Issues"
+      },
+      {
+        "id": "GS3_T2",
+        "gs_paper": "GS3",
+        "subject_name": "Economy",
+        "description": "Economy : Inclusive Growth"
+      },
+      {
+        "id": "GS3_T3",
+        "gs_paper": "GS3",
+        "subject_name": "Economy",
+        "description": "Economy : Government Budgeting"
+      },
+      {
+        "id": "GS3_T4",
+        "gs_paper": "GS3",
+        "subject_name": "Agriculture",
+        "description": "Agriculture : Crops, Irrigation & Market Systems"
+      },
+      {
+        "id": "GS3_T5",
+        "gs_paper": "GS3",
+        "subject_name": "Agriculture",
+        "description": "Agriculture : Farm Subsidies, PDS & Food Security"
+      },
+      {
+        "id": "GS3_T6",
+        "gs_paper": "GS3",
+        "subject_name": "Agriculture",
+        "description": "Agriculture : Food Processing & Supply Chains"
+      },
+      {
+        "id": "GS3_T7",
+        "gs_paper": "GS3",
+        "subject_name": "Agriculture",
+        "description": "Agriculture : Land Reforms"
+      },
+      {
+        "id": "GS3_T8",
+        "gs_paper": "GS3",
+        "subject_name": "Economy",
+        "description": "Economy : Liberalization & Industrial Growth"
+      },
+      {
+        "id": "GS3_T9",
+        "gs_paper": "GS3",
+        "subject_name": "Infrastructure",
+        "description": "Infrastructure : Transport & Energy Infrastructure"
+      },
+      {
+        "id": "GS3_T10",
+        "gs_paper": "GS3",
+        "subject_name": "Economy",
+        "description": "Economy : Investment Models"
+      },
+      {
+        "id": "GS3_T11",
+        "gs_paper": "GS3",
+        "subject_name": "Science & Technology",
+        "description": "Science & Technology : Science & Technology Applications"
+      },
+      {
+        "id": "GS3_T12",
+        "gs_paper": "GS3",
+        "subject_name": "Science & Technology",
+        "description": "Science & Technology : Indian Achievements & Indigenization"
+      },
+      {
+        "id": "GS3_T13",
+        "gs_paper": "GS3",
+        "subject_name": "Science & Technology",
+        "description": "Science & Technology : IT, Space, Robotics, IPR"
+      },
+      {
+        "id": "GS3_T14",
+        "gs_paper": "GS3",
+        "subject_name": "Environment",
+        "description": "Environment : Environmental Conservation & Assessment"
+      },
+      {
+        "id": "GS3_T15",
+        "gs_paper": "GS3",
+        "subject_name": "Disaster Management",
+        "description": "Disaster Management : Disaster Management"
+      },
+      {
+        "id": "GS3_T16",
+        "gs_paper": "GS3",
+        "subject_name": "Internal Security",
+        "description": "Internal Security : Development & Extremism"
+      },
+      {
+        "id": "GS3_T17",
+        "gs_paper": "GS3",
+        "subject_name": "Internal Security",
+        "description": "Internal Security : External Actors & Security Challenges"
+      },
+      {
+        "id": "GS3_T18",
+        "gs_paper": "GS3",
+        "subject_name": "Internal Security",
+        "description": "Internal Security : Cyber Security & Communication Threats"
+      },
+      {
+        "id": "GS3_T19",
+        "gs_paper": "GS3",
+        "subject_name": "Internal Security",
+        "description": "Internal Security : Border Security & Organized Crime"
+      },
+      {
+        "id": "GS3_T20",
+        "gs_paper": "GS3",
+        "subject_name": "Internal Security",
+        "description": "Internal Security : Security Forces & Agencies"
+      },
+      {
+        "id": "GS4_T1",
+        "gs_paper": "GS4",
+        "subject_name": "Ethics Theory",
+        "description": "Ethics Theory : Ethics & Human Values"
+      },
+      {
+        "id": "GS4_T2",
+        "gs_paper": "GS4",
+        "subject_name": "Attitude",
+        "description": "Attitude : Attitude & Behaviour"
+      },
+      {
+        "id": "GS4_T3",
+        "gs_paper": "GS4",
+        "subject_name": "Aptitude",
+        "description": "Aptitude : Civil Service Values & Aptitude"
+      },
+      {
+        "id": "GS4_T4",
+        "gs_paper": "GS4",
+        "subject_name": "Emotional Intelligence",
+        "description": "Emotional Intelligence : Emotional Intelligence"
+      },
+      {
+        "id": "GS4_T5",
+        "gs_paper": "GS4",
+        "subject_name": "Moral Thinkers",
+        "description": "Moral Thinkers : Moral Thinkers & Philosophers"
+      },
+      {
+        "id": "GS4_T6",
+        "gs_paper": "GS4",
+        "subject_name": "Public Service Ethics",
+        "description": "Public Service Ethics : Ethics in Public Administration"
+      },
+      {
+        "id": "GS4_T7",
+        "gs_paper": "GS4",
+        "subject_name": "Probity in Governance",
+        "description": "Probity in Governance : Probity & Transparency in Governance"
+      },
+      {
+        "id": "GS4_T8",
+        "gs_paper": "GS4",
+        "subject_name": "Case Studies",
+        "description": "Case Studies : Case Studies on Ethics & Governance"
+      }
+    ]
+  }
+  
