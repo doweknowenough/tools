@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/assets/logo.svg" type="image/gif" />
+<meta name="description" content="Generate and download your own customized UPSC Civil Services Examination (CSE) Mains Previous Year Questions (PYQ) Question-cum-Answer Booklet (QCAB) PDF for free. Select questions based on year, General Studies (GS) paper, or syllabus topic to create a personalized practice booklet.">
+<meta name="keywords" content="UPSC, CSE, Mains, PYQ, QCAB, PDF, GS1, GS2, GS3, GS4, 2025, 2024, 2023, 2022, Previous Year Questions, Question Paper, Answer Booklet, GS Paper, General Studies, Syllabus, Download, Free, Mock Test, Practice Paper, Civil Services, Exam Preparation, UPSC Mains Practice">
+<meta name="author" content="Anand Kumar Verma">
+<title>Download UPSC Mains PYQ QCAB PDF</title>
+<link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="main-content">
+        
+        <div style="display: flex; justify-content: space-between; padding: 2px;">
+            <a onclick="location.href='https://anand-verma.github.io/'" style="font-size: 14px; cursor: pointer; color:blue;">Home</a>
+            <a onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScfw6Ex_n5BXu-yqykG25pDaENT91RoOCzTO32eJvDEzj7JRA/viewform'" style="font-size: 14px; cursor: pointer; color:blue;">Feedback</a>
+            <!--<a onclick="location.reload()" style="font-size: 12px; cursor: pointer;">Reset page</a>-->
+        </div>
+        
+        <h1>UPSC Mains PYQ QCAB Generator</h1>
+        <div class="filter-mode">
+            <label><input type="radio" name="mode" value="year-gs" checked> Year + GS Paper</label>
+            <label><input type="radio" name="mode" value="gs-syllabus"> GS Paper + Syllabus Topic</label>
+        </div>
+
+        <div id="filters"></div>
+
+        <div id="selectedSummary" style="margin-bottom:10px; display:none;">
+            Selected Questions: <span id="selectedCount">0</span>, Total Marks: <span id="totalMarks">0</span>,
+            10-mark: <span id="count10">0</span>, 15-mark: <span id="count15">0</span>
+        </div>
+
+        <table id="questionsTable">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="selectAll"></th>
+                    <th>Year</th>
+                    <th>GS Paper</th>
+                    <th>Question Text</th>
+                    <th>Marks</th>
+                    <th>Word Limit</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div class="buttons">
+            <button id="generateQCAB">Generate and Download QCAB PDF</button>
+            <button id="downloadPDF" style="display:none;">Download QCAB PDF</button>
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+        <p>
+            Generate and download your own customized UPSC Civil Services Examination (CSE) Mains Previous Year Questions (PYQ) Question-cum-Answer Booklet (QCAB) PDF for free. Select questions based on year, General Studies (GS) paper, or syllabus topic to create a personalized practice booklet.
+            Provide feedback <a href="https://docs.google.com/forms/d/e/1FAIpQLScfw6Ex_n5BXu-yqykG25pDaENT91RoOCzTO32eJvDEzj7JRA/viewform">here.</a>
+        </p>
+    </footer>
+
+<script src="./js/populateQuestions.js"></script>
+<script src="./js/generatePDF.js"></script>
+
+</body>
+</html>
