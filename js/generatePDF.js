@@ -27,7 +27,7 @@ document.getElementById("generateQCAB").addEventListener("click", () => {
 });
 
 function generateQCABPDF(questions) {
-    // const { jsPDF } = window.jspdf;
+    const { jsPDF } = window.jspdf;
     const doc = new jsPDF({ unit: 'mm', format: 'a4' });
     const pageHeight = 297, pageWidth = 210;
     const leftMargin = 25, rightMargin = 185, topMargin = 15, bottomMargin = 282;
