@@ -27,7 +27,7 @@ document.getElementById("generateQCAB").addEventListener("click", () => {
 });
 
 function generateQCABPDF(questions) {
-    const { jsPDF } = window.jspdf;
+    // const { jsPDF } = window.jspdf;
     const doc = new jsPDF({ unit: 'mm', format: 'a4' });
     const pageHeight = 297, pageWidth = 210;
     const leftMargin = 25, rightMargin = 185, topMargin = 15, bottomMargin = 282;
@@ -56,8 +56,6 @@ function generateQCABPDF(questions) {
 
             // Footer
             const footerText = `XXXX-${q.question_id}`;
-            // const footerText2 = ${page};
-            // page++;
             doc.setFontSize(8);
             doc.text(footerText, leftMargin - 10, bottomMargin + 3);
             doc.text(String(page+p), rightMargin + 10, bottomMargin + 3);
@@ -89,11 +87,11 @@ function generateQCABPDF(questions) {
             }else {
                 // Right Margin Text (for marks page)
                 const localWidth = 23;
-                const startMargin = topMargin+5;
-                const marginSize = 20;
+                const startMargin = topMargin+50;
+                const marginSize = 25;
                 doc.text(doc.splitTextToSize("Demand addressed-",localWidth), rightMargin + 2, startMargin);
                 doc.text(doc.splitTextToSize("Left any dimension-",localWidth), rightMargin + 2, startMargin+marginSize);
-                doc.text(doc.splitTextToSize("nReadability-",localWidth), rightMargin + 2, startMargin+2*marginSize);
+                doc.text(doc.splitTextToSize("Readability-",localWidth), rightMargin + 2, startMargin+2*marginSize);
                 doc.text(doc.splitTextToSize("Introduction-",localWidth), rightMargin + 2, startMargin+3*marginSize);
                 doc.text(doc.splitTextToSize("Conclusion-",localWidth), rightMargin + 2, startMargin+4*marginSize);
             }
