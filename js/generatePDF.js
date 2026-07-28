@@ -60,7 +60,7 @@ function generateQCABPDF(questions) {
             // page++;
             doc.setFontSize(8);
             doc.text(footerText, leftMargin - 10, bottomMargin + 3);
-            doc.text(String(page+q), rightMargin + 10, bottomMargin + 3);
+            doc.text(String(page+p), rightMargin + 10, bottomMargin + 3);
 
             if (p === 0) {
                 // Left Question Number
@@ -89,15 +89,13 @@ function generateQCABPDF(questions) {
             }else {
                 // Right Margin Text (for marks page)
                 const localWidth = 23;
-                // const splitText = doc.splitTextToSize(
-                    // "Demand addressed-\n\n\n\nLeft any dimension-\n\n\n\nReadability-\n\n\n\nIntroduction-\n\n\n\nConclusion-\n\n\n\n",
-                    // localWidth
-                // );
-                // let currentY = topMargin + 5;
-                // doc.text(splitText, rightMargin + 2, currentY);
-
-                doc.text(doc.splitTextToSize("Demand addressed-",localWidth), rightMargin + 2, topMargin+5);
-                doc.text(doc.splitTextToSize("Introduction-",localWidth), rightMargin + 2, topMargin+15);
+                const startMargin = topMargin+5;
+                const marginSize = 20;
+                doc.text(doc.splitTextToSize("Demand addressed-",localWidth), rightMargin + 2, startMargin);
+                doc.text(doc.splitTextToSize("Left any dimension-",localWidth), rightMargin + 2, startMargin+marginSize);
+                doc.text(doc.splitTextToSize("nReadability-",localWidth), rightMargin + 2, startMargin+2*marginSize);
+                doc.text(doc.splitTextToSize("Introduction-",localWidth), rightMargin + 2, startMargin+3*marginSize);
+                doc.text(doc.splitTextToSize("Conclusion-",localWidth), rightMargin + 2, startMargin+4*marginSize);
             }
         }
         page+=pagesNeeded;
