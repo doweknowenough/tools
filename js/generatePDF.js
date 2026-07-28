@@ -31,6 +31,7 @@ function generateQCABPDF(questions) {
     const doc = new jsPDF({ unit: 'mm', format: 'a4' });
     const pageHeight = 297, pageWidth = 210;
     const leftMargin = 25, rightMargin = 185, topMargin = 15, bottomMargin = 282;
+    const page = 1;
 
     doc.setFont("Times", "Roman");
     doc.setFontSize(12);
@@ -55,8 +56,10 @@ function generateQCABPDF(questions) {
 
             // Footer
             const footerText = `XXXX-${q.question_id}`;
+            const footerText2 = `XXXX-${page++}`;
             doc.setFontSize(8);
             doc.text(footerText, leftMargin - 10, bottomMargin + 3);
+            doc.text(footerText2, rightMargin + 10, bottomMargin + 3);
 
             if (p === 0) {
                 // Left Question Number
