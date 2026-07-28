@@ -86,7 +86,7 @@ function generateQCABPDF(questions) {
                 // Right Margin Text (for marks page)
                 const localWidth = 23;
                 const splitText = doc.splitTextToSize(
-                    "Mr Bean",
+                    "Demand addressed- Left any dimension- Readability- Introduction- Conclusion-",
                     localWidth
                 );
                 let currentY = topMargin + 5;
