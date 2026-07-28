@@ -40,28 +40,28 @@ function generateQCABPDF(questions) {
     const localWidth = rightMargin - leftMargin +4; 
     const lineHeight = 6; // or set according to your font size and line spacing
 
-    questions.forEach((q, index) => {
-        // Format question text
-        const qHeader = `${q.question_number}. `;
-        const qText = `${q.question_text}   [${q.marks} M / ${q.year}]`;
-        console.log( "Questions:",qHeader,"----", qText);
-        // Split text to fit within width
-        const splitText = doc.splitTextToSize(qText, localWidth);
-        const totalHeight = splitText.length * lineHeight + lineHeight;
+    // questions.forEach((q, index) => {
+    //     // Format question text
+    //     const qHeader = `${q.question_number}. `;
+    //     const qText = `${q.question_text}   [${q.marks} M / ${q.year}]`;
+    //     console.log( "Questions:",qHeader,"----", qText);
+    //     // Split text to fit within width
+    //     const splitText = doc.splitTextToSize(qText, localWidth);
+    //     const totalHeight = splitText.length * lineHeight + lineHeight;
 
-        // Add new page if content exceeds bottom margin
-        if (currentY + totalHeight > pageHeight - 15) {
-            doc.addPage();
-            currentY = topMargin;
-        }
+    //     // Add new page if content exceeds bottom margin
+    //     if (currentY + totalHeight > pageHeight - 15) {
+    //         doc.addPage();
+    //         currentY = topMargin;
+    //     }
 
-        // Draw question number and text
-        doc.text(qHeader, leftMargin - 10, currentY);
-        doc.text(splitText, leftMargin + 2, currentY);
+    //     // Draw question number and text
+    //     doc.text(qHeader, leftMargin - 10, currentY);
+    //     doc.text(splitText, leftMargin + 2, currentY);
 
-        // Update Y position
-        currentY += totalHeight; // spacing between questions
-    });
+    //     // Update Y position
+    //     currentY += totalHeight; // spacing between questions
+    // });
 
     // ---------- PART 2: Render QCAB Pages ----------
 
