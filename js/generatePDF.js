@@ -60,7 +60,7 @@ function generateQCABPDF(questions) {
             // page++;
             doc.setFontSize(8);
             doc.text(footerText, leftMargin - 10, bottomMargin + 3);
-            doc.text(String(page), rightMargin + 10, bottomMargin + 3);
+            doc.text(String(page++), rightMargin + 10, bottomMargin + 3);
 
             if (p === 0) {
                 // Left Question Number
@@ -90,7 +90,7 @@ function generateQCABPDF(questions) {
                 // Right Margin Text (for marks page)
                 const localWidth = 23;
                 const splitText = doc.splitTextToSize(
-                    "Demand addressed- Left any dimension- Readability- Introduction- Conclusion-",
+                    "Demand addressed-\n\n\n\nLeft any dimension-\n\n\n\nReadability-\n\n\n\nIntroduction-\n\n\n\nConclusion-\n\n\n\n",
                     localWidth
                 );
                 let currentY = topMargin + 5;
